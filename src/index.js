@@ -1,6 +1,6 @@
-const { EventEmitter } = require('events');
-const app = require('express')();
-const topgg = require('@top-gg/sdk');
+const { EventEmitter } = require("events");
+const app = require("express")();
+const topgg = require("@top-gg/sdk");
 
 class VoteListener extends EventEmitter {
   /**
@@ -12,7 +12,7 @@ class VoteListener extends EventEmitter {
    * const Vote = require('topgg-vote-receiver');
 const vote = new Vote({
   auth: 'topggauth123',
-  port: 1230,
+  port: 3000,
 });
 
 vote.handleVotes();
@@ -31,9 +31,9 @@ console.log(`Listening on 3000`);
   handleVotes = () => {
     const webhook = new topgg.Webhook(this.auth);
     app.post(
-      '/dblwebhook',
+      "/dblwebhook",
       webhook.listener((vote) => {
-        this.emit('voted', vote);
+        this.emit("voted", vote);
       })
     );
 

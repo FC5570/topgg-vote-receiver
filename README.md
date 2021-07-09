@@ -8,7 +8,7 @@ A top.gg vote receiver which listens to votes for a bot.
 const Vote = require('topgg-vote-receiver');
 const vote = new Vote({
   auth: 'topggauth123',
-  port: 1230,
+  port: 3000,
 });
 
 vote.handleVotes();
