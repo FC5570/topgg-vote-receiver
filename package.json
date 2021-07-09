@@ -1,0 +1,30 @@
+{
+  "name": "topgg-vote-receiver",
+  "version": "1.0.0",
+  "description": "A top.gg vote receiver which listens to votes on a bot.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FC5570/topgg-vote-receiver.git"
+  },
+  "keywords": [
+    "topgg",
+    "vote",
+    "discord",
+    "bots",
+    "topgg-vote"
+  ],
+  "author": "FC5570",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FC5570/topgg-vote-receiver/issues"
+  },
+  "homepage": "https://github.com/FC5570/topgg-vote-receiver#readme",
+  "dependencies": {
+    "@top-gg/sdk": "^3.1.2",
+    "express": "^4.17.1"
+  }
+}
