@@ -4,15 +4,15 @@ A top.gg vote receiver which listens to votes for a bot.
 
 ## Example
 
-```
-const Vote = require('topgg-vote-receiver');
-const vote = new Vote({
-  auth: 'topggauth123',
+```js
+const VoteListener = require("topgg-vote-receiver");
+const vote = new VoteListener({
+  auth: "topggauth123",
   port: 3000,
 });
 
 vote.handleVotes();
-vote.on('voted', (vote) => {
+vote.on("voted", (vote) => {
   console.log(vote);
 });
 console.log(`Listening on 3000`);

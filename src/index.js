@@ -9,8 +9,8 @@ class VoteListener extends EventEmitter {
    * @param {String} options.auth: The top.gg webhook authorization token (can be found on webhook page)
    * @param {Number} options.port: The port to listen on (for the express app)
    * @example ```js
-   * const Vote = require('topgg-vote-receiver');
-const vote = new Vote({
+   * const VoteListener = require('topgg-vote-receiver');
+const vote = new VoteListener({
   auth: 'topggauth123',
   port: 3000,
 });
