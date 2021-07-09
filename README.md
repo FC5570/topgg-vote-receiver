@@ -20,7 +20,7 @@ console.log(`Listening on 3000`);
 
 ## Events
 
-1. 'voted' _(data)_ - Emitted when a user votes for the bot. `data` is an object which contains info of the user who voted and other details.
+1. 'voted' _(vote)_ - Emitted when a user votes for the bot. `vote` is an object which contains info of the user who voted and other details.
 
 ## API
 
